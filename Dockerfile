@@ -11,4 +11,6 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod 0700 /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
+
+EXPOSE 1723/tcp
 CMD ["pptpd", "--fg"]

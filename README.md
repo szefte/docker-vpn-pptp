@@ -1,3 +1,6 @@
+# This is a fork of mobitude/pptp-vpn customized for use with AWS Beanstalk. -szefte
+
+
 # VPN (PPTP) for Docker
 
 This is a docker image with simple VPN (PPTP) server with _chap-secrets_ authentication.
@@ -46,4 +49,7 @@ docker run -d --privileged --net=host -v {local_path_to_chap_secrets}:/etc/ppp/c
 
 **Note:** Before starting container in `--net=host` mode, please read how networking in `host` mode works in Docker:
 https://docs.docker.com/reference/run/#mode-host
+
+
+
 
